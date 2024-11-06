@@ -1,14 +1,49 @@
+/* Reset margin for all elements */
 * {
-    /*Begin van de css, geen ide wat*/
-}
-background-color{
-    color: #cb6c32;
-}
-
-h1 {
-    color: rgba(69, 69, 69, 69);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cb6c32;
+}
+
+/* Flexbox styling for header */
+header {
+    display: flex;
+    align-items: center;       /* Align items vertically centered */
     background-color: #ebcd9b;
+    padding: 10px 20px;        /* Adds some padding around the header */
+}
+
+/* Styling for the logo image */
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-right: 20px;        /* Space between logo and buttons */
+}
+
+/* Navbar styling */
+#navbar {
+    display: flex;             /* Flex layout for buttons */
+    gap: 10px;                 /* Adds space between buttons */
+}
+
+/* Button styling */
+.knop {
+    width: 15vw;
+    background-color: #cb6c32;
+    color: #ebcd9b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.knop h2 {
+    margin: 0;
+    font-size: 1.2em;
 }
