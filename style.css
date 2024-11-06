@@ -1,38 +1,33 @@
-/* Reset margin for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    font-family: Arial, sans-serif;
     background-color: #cb6c32;
 }
 
-/* Flexbox styling for header */
 header {
     display: flex;
-    align-items: center;       /* Align items vertically centered */
+    flex-direction: row;
+    align-items: center;
     background-color: #ebcd9b;
-    padding: 10px 20px;        /* Adds some padding around the header */
+    padding: 10px 20px;
+    justify-content: space-between;
+    padding-right: 12%;
 }
 
-/* Styling for the logo image */
 .logo {
     height: 150px;
-    width: 150px;
-    margin-right: 20px;        /* Space between logo and buttons */
+    width: 150px;      
 }
 
-/* Navbar styling */
 #navbar {
-    display: flex;             /* Flex layout for buttons */
-    gap: 10px;                 /* Adds space between buttons */
+    display: flex;             
+    gap: 10px;                
 }
 
-/* Button styling */
 .knop {
     width: 15vw;
     background-color: #cb6c32;
@@ -45,5 +40,4 @@ header {
 
 .knop h2 {
     margin: 0;
-    font-size: 1.2em;
 }
