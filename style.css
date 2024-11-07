@@ -22,8 +22,9 @@ footer {
     background-color: #ebcd9b;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: ;
     padding-right: 20%;
+    align-items: center;
 }
 
 .logo {
@@ -52,4 +53,18 @@ footer {
     outline-style: solid;
     outline-width: 2px;
     outline-color: #cb6c32;
+}
+
+.knop_f {
+    color: #cb6c32;
+    cursor: pointer;
+}
+
+.knop_f:hover {
+    text-decoration: underline;
+}
+
+#link_youtube {
+    color: #cb6c32;
+    text-decoration: none;
 }
