@@ -13,19 +13,21 @@ header {
     flex-direction: row;
     align-items: center;
     background-color: #ebcd9b;
-    padding: 10px 20px;
     justify-content: space-between;
+    padding: 10px 20px;
     padding-right: 12%;
 }
 
-.logo {
-    height: 150px;
-    width: 150px;      
+footer {
+    background-color: #ebcd9b;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 20%;
 }
 
-#navbar {
-    display: flex;             
-    gap: 10px;                
+.logo {
+    cursor: pointer; 
 }
 
 .knop {
@@ -36,8 +38,18 @@ header {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.7s;
 }
 
 .knop h2 {
     margin: 0;
+}
+
+.knop:hover {
+    transition: 0.35s;
+    color: #cb6c32;
+    background-color: #ebcd9b;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #cb6c32;
 }
