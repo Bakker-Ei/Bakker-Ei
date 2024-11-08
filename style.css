@@ -22,9 +22,9 @@ footer {
     background-color: #ebcd9b;
     display: flex;
     justify-content: space-between;
-    text-align: ;
-    padding-right: 20%;
     align-items: center;
+    padding-right: 3%;
+    padding-left: 1%;
 }
 
 .logo {
@@ -55,7 +55,19 @@ footer {
     outline-color: #cb6c32;
 }
 
-.knop_f {
+#trademark {
+    align-items: center;
+    color: #cb6c32;
+    display: flex;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+}
+
+.knop_f { 
     color: #cb6c32;
     cursor: pointer;
 }
