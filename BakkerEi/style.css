@@ -110,9 +110,22 @@ h1 {
 
 #link_youtube {
     color: #cb6c32;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-#producten {
-    text-decoration: none;
+
+/*Producten gefixt met important en kleur opnieut toepassen om zeker te zijn*/
+
+header #producten {
+    text-decoration: none; 
+}
+
+header #producten .knop {
+    text-decoration: none !important; 
+    color: #ebcd9b; 
+}
+
+header #producten .knop:hover {
+    text-decoration: none !important; 
+    color: #cb6c32; 
 }
