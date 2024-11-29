@@ -172,4 +172,15 @@ footer #knop_f:hover {
     cursor: pointer;
 }
 
-
+/*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
+@media screen and (max-width: 767px) {
+    #container p {
+        font-size: 4rem;
+    }
+    header img {
+        max-width: 100%;
+        height: 100px;
+        width: 100px;
+        margin-right: 20px;
+    }
+}
