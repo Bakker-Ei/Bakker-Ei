@@ -115,7 +115,7 @@ h1 {
 
 
 /*Producten gefixt met important en kleur opnieut toepassen om zeker te zijn*/
-
+/*Deze css code is raar maar is de enige manier om de knoppen te laten werken, sorry otger */
 header #producten {
     text-decoration: none; 
 }
@@ -129,3 +129,35 @@ header #producten .knop:hover {
     text-decoration: none !important; 
     color: #cb6c32; 
 }
+
+header #verhaal {
+    text-decoration: none; 
+}
+
+header #verhaal .knop {
+    text-decoration: none !important; 
+    color: #ebcd9b; 
+}
+
+header #verhaal .knop:hover {
+    text-decoration: none !important; 
+    color: #cb6c32; 
+}
+
+
+header #contact {
+    text-decoration: none; 
+}
+
+header #contact .knop {
+    text-decoration: none !important; 
+    color: #ebcd9b; 
+}
+
+header #contact .knop:hover {
+    text-decoration: none !important; 
+    color: #cb6c32; 
+}
+
+
+
