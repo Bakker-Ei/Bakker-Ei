@@ -38,10 +38,12 @@ h2 {
     font-family: "baker-signet-web", serif;
     font-weight: 730;
     font-style: normal;
+    cursor: default;
 }
 
 h1 {
     color: #ebcd9b;
+    cursor: default;
 }
 
 .logo {
@@ -115,7 +117,7 @@ h1 {
 
 
 /*Producten gefixt met important en kleur opnieut toepassen om zeker te zijn*/
-/*Deze css code is raar maar is de enige manier om de knoppen te laten werken, sorry otger */
+/*Deze css code is raar maar is de enige manier om de knoppen te laten werken, sorry Otger. kusjes Thijn en Yannis */
 header #producten {
     text-decoration: none; 
 }
@@ -159,5 +161,15 @@ header #contact .knop:hover {
     color: #cb6c32; 
 }
 
+
+footer #contact_f {
+    text-decoration: none !important; 
+    color :#cb6c32;
+}
+
+footer #knop_f:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
