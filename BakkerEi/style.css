@@ -38,18 +38,56 @@ h2 {
     font-family: "baker-signet-web", serif;
     font-weight: 730;
     font-style: normal;
+    font-size: 25pt;
     cursor: default;
+    color: #ebcd9b;
 }
 
 h1 {
     color: #ebcd9b;
     cursor: default;
+    font-size: 35pt;
 }
 
 .logo {
     cursor: pointer;
 }
 
+titeltekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  width: 50vw;
+  padding-bottom: 5%;
+  margin: 20px 0px 20px 20px;
+}
+
+melomakarona {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap : 20px;
+
+}
+
+producten {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15%;
+    height: 50vh;
+    overflow: hidden;
+    padding-bottom: 5%;
+}
+
+.product_afbeelding {
+    width: 30vw;
+    align-self: flex-end;
+    border-radius: 20px;
+}
 .knop, .knop a {
     width: 15vw;
     height: 7vh;
@@ -69,6 +107,7 @@ h1 {
 .knop h2, .knop a h2 {
     margin: 0;
     color: inherit;
+
 }
 
 .knop a {
