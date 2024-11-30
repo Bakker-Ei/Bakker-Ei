@@ -77,17 +77,53 @@ producten {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 15%;
+    gap: 25vw;
     height: 50vh;
     overflow: hidden;
     padding-bottom: 5%;
 }
 
 .product_afbeelding {
-    width: 30vw;
+    height: 30vh;
     align-self: flex-end;
     border-radius: 20px;
 }
+
+
+ons_team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17vw;
+    height: 50vh;
+    overflow: hidden;
+    padding-bottom: 5%;
+}
+
+ons_merk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17vw;
+    height: 50vh;
+    overflow: hidden;
+    padding-bottom: 5%;
+    text-align: right;
+}
+
+
+wij {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    gap : 20px;
+
+}
+
 .knop, .knop a {
     width: 15vw;
     height: 7vh;
