@@ -59,6 +59,17 @@ h1 {
     font-size: 35pt;
 }
 
+
+.knop_href {
+    text-decoration: none;
+    color: #ebcd9b;
+}
+
+.knop_href:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .logo {
     cursor: pointer;
 }
@@ -194,72 +205,13 @@ contact {
 }
 
 .knop_f {
+    text-decoration: none;
     color: #cb6c32;
     cursor: pointer;
 }
 
-.knop_f:hover {
-    text-decoration: underline;
-}
 
-#link_youtube {
-    color: #cb6c32;
-    text-decoration: none !important;
-}
-
-
-/*Producten gefixt met important en kleur opnieut toepassen om zeker te zijn*/
-/*Deze css code is raar maar is de enige manier om de knoppen te laten werken, sorry Otger. kusjes Thijn en Yannis */
-header #producten {
-    text-decoration: none; 
-}
-
-header #producten .knop {
-    text-decoration: none !important; 
-    color: #ebcd9b; 
-}
-
-header #producten .knop:hover {
-    text-decoration: none !important; 
-    color: #cb6c32; 
-}
-
-header #verhaal {
-    text-decoration: none; 
-}
-
-header #verhaal .knop {
-    text-decoration: none !important; 
-    color: #ebcd9b; 
-}
-
-header #verhaal .knop:hover {
-    text-decoration: none !important; 
-    color: #cb6c32; 
-}
-
-
-header #contact {
-    text-decoration: none; 
-}
-
-header #contact .knop {
-    text-decoration: none !important; 
-    color: #ebcd9b; 
-}
-
-header #contact .knop:hover {
-    text-decoration: none !important; 
-    color: #cb6c32; 
-}
-
-
-footer #contact_f {
-    text-decoration: none !important; 
-    color :#cb6c32;
-}
-
-footer #knop_f:hover {
+#knop_f:hover {
     text-decoration: underline;
     cursor: pointer;
 }
