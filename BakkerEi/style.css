@@ -10,16 +10,9 @@
 html, body {
     height: 100%;
     margin: 0;
-}
-
-body {
     display: flex;
     flex-direction: column;
     background-color: #cb6c32;
-}
-
-main {
-    flex: 1 0 auto;
 }
 
 header {
@@ -30,6 +23,12 @@ header {
     justify-content: space-between;
     padding: 10px 20px;
     padding-right: 12%;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 footer {
@@ -39,8 +38,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 3% 10px 1%;
-    position: sticky;
-    bottom: 0;
     width: 100%;
 }
 
@@ -59,6 +56,34 @@ h1 {
     font-size: 35pt;
 }
 
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+button.vorige {
+    left: 20px;
+}
+
+button.volgende {
+    right: 20px;
+}
+
+button.vorige,
+button.volgende {
+    z-index: 20;
+}
+
+svg {
+    color: #cb6c32;
+}
 
 .knop_href {
     text-decoration: none;
@@ -74,26 +99,25 @@ h1 {
     cursor: pointer;
 }
 
-titeltekst {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  width: 50vw;
-  padding-bottom: 5%;
-  margin: 20px 0px 20px 20px;
+.titeltekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: 50vw;
+    padding-bottom: 1%;
+    margin: 0px 0px 0px 0px;
 }
 
-melomakarona {
+.melomakarona {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
-    gap : 20px;
-
+    gap: 20px;
 }
 
-producten {
+.producten {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,8 +134,7 @@ producten {
     border-radius: 20px;
 }
 
-
-ons_team {
+.ons_team {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -122,7 +145,7 @@ ons_team {
     padding-bottom: 5%;
 }
 
-ons_merk {
+.ons_merk {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -134,18 +157,16 @@ ons_merk {
     text-align: right;
 }
 
-
-wij {
+.wij {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     padding: 20px;
-    gap : 20px;
-
+    gap: 20px;
 }
 
-contact {
+.contact {
     text-align: center;
     height: 100vh !important;
     line-height: 2;
@@ -171,7 +192,6 @@ contact {
 .knop h2, .knop a h2 {
     margin: 0;
     color: inherit;
-
 }
 
 .knop a {
@@ -210,7 +230,6 @@ contact {
     cursor: pointer;
 }
 
-
 #knop_f:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -238,38 +257,6 @@ contact {
     flex-shrink: 0;
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-button.vorige {
-    left: 20px;
-}
-
-button.volgende {
-    right: 20px;
-}
-
-button.vorige,
-button.volgende {
-    z-index: 20;
-}
-
-svg {
-    color: #cb6c32;
-}
-
-
-
-
 /*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
 @media screen and (max-width: 767px) {
     #container p {
@@ -282,7 +269,3 @@ svg {
         margin-right: 20px;
     }
 }
-
-
-
-
