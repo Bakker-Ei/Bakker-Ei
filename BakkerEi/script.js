@@ -1,63 +1,68 @@
-const images = document.querySelector('.carousel-images');
-const prevButton = document.querySelector('.vorige');
-const nextButton = document.querySelector('.volgende');
+document.addEventListener('DOMContentLoaded', () => {
+  // Hamburger Menu Functionality
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const header = document.querySelector('header');
 
-// Clone the first and last images
-const firstClone = images.children[0].cloneNode(true);
-const lastClone = images.children[images.children.length - 1].cloneNode(true);
-
-// Add the clones to the carousel
-images.appendChild(firstClone);
-images.insertBefore(lastClone, images.firstChild);
-
-let currentIndex = 1; // Start at 1 to account for the cloned last image at the beginning
-const totalImages = images.children.length;
-
-function updateCarousel(smooth = true) {
-  const width = images.children[0].clientWidth;
-  images.style.transition = smooth ? 'transform 0.5s ease' : 'none';
-  images.style.transform = `translateX(-${currentIndex * width}px)`;
-}
-
-function moveToNextImage() {
-  currentIndex++;
-  updateCarousel();
-
-  if (currentIndex === totalImages - 1) {
-    setTimeout(() => {
-      currentIndex = 1;
-      updateCarousel(false);
-    }, 500);
+  if (hamburgerMenu && header) {
+    hamburgerMenu.addEventListener('click', () => {
+      header.classList.toggle('menu-open');
+    });
   }
-}
 
-function moveToPreviousImage() {
-  currentIndex--;
-  updateCarousel();
+  // Carousel Functionality
+  const images = document.querySelector('.carousel-images');
+  const prevButton = document.querySelector('.vorige');
+  const nextButton = document.querySelector('.volgende');
 
-  if (currentIndex === 0) {
-    setTimeout(() => {
-      currentIndex = totalImages - 2;
-      updateCarousel(false);
-    }, 500);
+  if (images && prevButton && nextButton) {
+    // Clone the first and last images
+    const firstClone = images.children[0].cloneNode(true);
+    const lastClone = images.children[images.children.length - 1].cloneNode(true);
+
+    // Add the clones to the carousel
+    images.appendChild(firstClone);
+    images.insertBefore(lastClone, images.firstChild);
+
+    let currentIndex = 1; // Start at 1 to account for the cloned last image at the beginning
+    const totalImages = images.children.length;
+
+    function updateCarousel(smooth = true) {
+      const width = images.children[0].clientWidth;
+      images.style.transition = smooth ? 'transform 0.5s ease' : 'none';
+      images.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    function moveToNextImage() {
+      currentIndex++;
+      updateCarousel();
+
+      if (currentIndex === totalImages - 1) {
+        setTimeout(() => {
+          currentIndex = 1;
+          updateCarousel(false);
+        }, 500);
+      }
+    }
+
+    function moveToPreviousImage() {
+      currentIndex--;
+      updateCarousel();
+
+      if (currentIndex === 0) {
+        setTimeout(() => {
+          currentIndex = totalImages - 2;
+          updateCarousel(false);
+        }, 500);
+      }
+    }
+
+    prevButton.addEventListener('click', moveToPreviousImage);
+    nextButton.addEventListener('click', moveToNextImage);
+
+    // Initial positioning
+    updateCarousel(false);
+
+    // Auto-slide
+    setInterval(moveToNextImage, 10000);
   }
-}
-
-prevButton.addEventListener('click', moveToPreviousImage);
-nextButton.addEventListener('click', moveToNextImage);
-
-// Initial positioning
-updateCarousel(false);
-
-setInterval(moveToNextImage, 10000);
-
-
-//HABURGER
-
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-
-
-const header = document.querySelector('header');
-hamburgerMenu.addEventListener('click', () => {
-  header.classList.toggle('menu-open');
 });
