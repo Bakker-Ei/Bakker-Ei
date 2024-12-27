@@ -86,7 +86,7 @@ button.volgende {
 
 button.vorige,
 button.volgende {
-    z-index: 20;
+    z-index: 0;
 }
 
 svg {
@@ -199,6 +199,7 @@ svg {
 .knop h2, .knop a h2 {
     margin: 0;
     color: inherit;
+    padding: 10px;
 }
 
 .knop a {
@@ -393,5 +394,9 @@ svg {
     .hamburger-menu {
         display: none;
     }
+    .menu-items {
+        display: none;
+    }
 }
 
+}
