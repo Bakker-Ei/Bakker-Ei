@@ -28,6 +28,11 @@ header {
     z-index: 2;
 }
 
+#producten_header {
+
+    font-size: 50px;
+    
+}
 main {
     flex: 1 0 auto;
 }
@@ -46,15 +51,17 @@ h2 {
     font-family: "baker-signet-web", serif;
     font-weight: 730;
     font-style: normal;
-    font-size: 25pt;
+    font-size: 3.5vw;
     cursor: default;
     color: #ebcd9b;
+    display: flex;
+    flex-shrink: inherit;
 }
 
 h1 {
     color: #ebcd9b;
     cursor: default;
-    font-size: 35pt;
+    font-size: 5rem;
 }
 
 button {
@@ -175,8 +182,6 @@ svg {
 }
 
 .knop, .knop a {
-    width: 15vw;
-    height: 7vh;
     background-color: #cb6c32;
     color: #ebcd9b;
     text-align: center;
@@ -188,6 +193,7 @@ svg {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    flex-grow: calc();
 }
 
 .knop h2, .knop a h2 {
@@ -268,5 +274,8 @@ svg {
         height: 100px;
         width: 100px;
         margin-right: 20px;
+    }
+    .knop, knop a{
+        display: none;
     }
 }
