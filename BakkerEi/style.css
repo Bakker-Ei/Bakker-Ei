@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -51,7 +55,7 @@ h2 {
     font-family: "baker-signet-web", serif;
     font-weight: 730;
     font-style: normal;
-    font-size: 3.5vw;
+    font-size: 3vw;
     cursor: default;
     color: #ebcd9b;
     display: flex;
@@ -185,7 +189,8 @@ svg {
     background-color: #cb6c32;
     color: #ebcd9b;
     text-align: center;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.7s;
@@ -389,14 +394,6 @@ svg {
     }
 
 
-/*Niet op groot scherm*/
-@media screen and (min-width: 768px) {
-    .hamburger-menu {
-        display: none;
-    }
-    .menu-items {
-        display: none;
-    }
-}
+
 
 }
