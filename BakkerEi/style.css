@@ -267,7 +267,10 @@ svg {
 /*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
 @media screen and (max-width: 767px) {
     #container p {
-        font-size: 4rem;
+        font-size: 10vw !important;
+    }
+    h2 {
+        font-size: 10vw;
     }
     header img {
         max-width: 100%;
@@ -275,7 +278,120 @@ svg {
         width: 100px;
         margin-right: 20px;
     }
-    .knop, knop a{
+    .knop, .knop a {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-open header {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-items a {
+        font-size: 10vw; 
+        background-color: #cb6c32;
+        height: 20vh;
+        margin-top: 2vh;
+        color: #ebcd9b;
+        text-align: center;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.7s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        flex-grow: calc();
+    }
+
+
+    .menu-items {
+        d.menu-items {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #ebcd9b;
+            padding: 20px;
+            font-size: 20px
+    }
+
+    .menu-open .menu-items {
+        display: flex;
+    }
+
+}
+
+    .hamburger-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+    }
+
+    .hamburger-icon span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #cb6c32;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .menu-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #cb6c32;
+        padding: 20px;
+    }
+
+    .menu-open .menu-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #ebcd9b;
+        padding: 20px;
+        height: 100vh;
+        z-index: 100000;
+    }
+
+
+
+    .menu-open .menu-items {
+        display: block;
+    }
+
+    .menu-open .hamburger-icon span:first-child {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-open .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-open .hamburger-icon span:last-child {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+
+/*Niet op groot scherm*/
+@media screen and (min-width: 768px) {
+    .hamburger-menu {
         display: none;
     }
 }
+
