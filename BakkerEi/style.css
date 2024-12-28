@@ -22,6 +22,7 @@ html, body {
 header {
     display: flex;
     flex-direction: row;
+    height: 10vw;
     align-items: center;
     background-color: #ebcd9b;
     justify-content: space-between;
@@ -60,13 +61,23 @@ h2 {
     color: #ebcd9b;
     display: flex;
     flex-shrink: inherit;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
 }
 
 h1 {
     color: #ebcd9b;
     cursor: default;
-    font-size: 5rem;
+    font-size: 8vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
+
+::selection {
+    color: #cb6c32;
+    background: #ebcd9b;
+  }
 
 button {
     position: absolute;
@@ -107,15 +118,21 @@ svg {
     cursor: pointer;
 }
 
+.logo_f {
+    width: 5vw;
+    padding-right: 1vw;
+}
+
 .logo {
     cursor: pointer;
+    width: 11vw;
 }
 
 .titeltekst {
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    width: 50vw;
+    width: 100vw;
     padding-bottom: 1%;
     margin: 0px 0px 0px 0px;
 }
@@ -131,24 +148,33 @@ svg {
 
 .producten {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 25vw;
-    height: 50vh;
-    overflow: hidden;
+    height: 40vh;
     padding-bottom: 5%;
 }
 
+.melomakarona {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
 .product_afbeelding {
-    height: 30vh;
+    height: 30vw;
     align-self: flex-end;
     border-radius: 20px;
 }
 
 .ons_team {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 17vw;
@@ -158,24 +184,10 @@ svg {
 }
 
 .ons_merk {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 17vw;
-    height: 50vh;
+    height: 50vh;   
     overflow: hidden;
     padding-bottom: 5%;
-    text-align: right;
-}
-
-.wij {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 20px;
-    gap: 20px;
+    text-align: right !important;
 }
 
 .contact {
@@ -276,12 +288,32 @@ svg {
         font-size: 10vw !important;
     }
     h2 {
-        font-size: 10vw;
+        font-size: 7vw;
+        padding-left: 3vw !important;
+        padding-right: 3vw !important;
+        padding-bottom: 2vh;
+        text-align: center;
     }
+
+    h1 {
+        font-size: 15vw;
+        margin-bottom: 1vh;
+        padding-left: 3vw !important;
+        text-align: center;
+    }
+
+    .producten {
+        flex-direction: column;
+    }
+
+    header {
+        height: 30vw;
+    }
+
     header img {
         max-width: 100%;
-        height: 100px;
-        width: 100px;
+        height: 25vw !important;
+        width: 25vw !important;
         margin-right: 20px;
     }
     .knop, .knop a {
@@ -302,7 +334,7 @@ svg {
     .menu-items a {
         font-size: 10vw; 
         background-color: #cb6c32;
-        height: 20vh;
+        height: 40vw;
         margin-top: 2vh;
         color: #ebcd9b;
         text-align: center;
@@ -340,14 +372,14 @@ svg {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 30px;
-        height: 25px;
+        width: 10vw;
+        height: 10vw;
     }
 
     .hamburger-icon span {
         display: block;
         width: 100%;
-        height: 3px;
+        height: 1.3vw;
         background-color: #cb6c32;
         transition: all 0.3s ease-in-out;
     }
@@ -382,7 +414,7 @@ svg {
     }
 
     .menu-open .hamburger-icon span:first-child {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(0.8vw, 1.3vw);
     }
 
     .menu-open .hamburger-icon span:nth-child(2) {
@@ -390,10 +422,25 @@ svg {
     }
 
     .menu-open .hamburger-icon span:last-child {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: rotate(-45deg) translate(3.4vw, -4vw);
     }
 
 
+    .product_afbeelding {
+        width:  80vw;
+        height : 75vw;
+        margin-left: 5vw;
+        align-items: center;
+    }
+
+    .wij {
+        margin-right: 5vw;
+    }
+
+    .titeltekst {
+        padding-left: 3vw;
+        flex-wrap: nowrap !important;
+    }
 
 
 }
