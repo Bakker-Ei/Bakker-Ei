@@ -50,6 +50,10 @@ footer {
     align-items: center;
     padding: 10px 3% 10px 1%;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .contact {
@@ -167,11 +171,12 @@ button.volgende {
 .producten {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;    
     height: 5vh;
     padding-bottom: 5%;
-    padding-top: 20%;
+    padding-top: 1%;
 }
 
 .ons_team {
