@@ -397,6 +397,11 @@ button.volgende {
         transition: all 0.3s ease-in-out;
     }
 
+    
+    button.vorige,
+    button.volgende {
+        display: none;
+    }
 
     .menu-items {
         display: none;
