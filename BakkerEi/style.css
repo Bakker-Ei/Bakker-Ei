@@ -66,11 +66,14 @@ h2 {
     font-size: 3vw;
     cursor: default;
     color: #ebcd9b;
-    display: flex;
     flex-shrink: inherit;
     padding-left: 2vw;
     padding-right: 1vw;
     padding-bottom: 1vw;
+}
+
+h2 .contact{
+    text-align: center;
 }
 
 h1 {
@@ -144,9 +147,16 @@ svg {
     margin: 0px 0px 0px 0px;
 }
 
+.product_afbeelding {
+    height: 30vw;
+    align-self: flex-end;
+    border-radius: 20px;
+}
+
 .melomakarona {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
@@ -155,28 +165,12 @@ svg {
 
 .producten {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 25vw;
-    height: 40vh;
+    justify-content: flex-end;    
+    height: 5vh;
     padding-bottom: 5%;
-}
-
-.melomakarona {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    gap: 20px;
-}
-
-.product_afbeelding {
-    height: 30vw;
-    align-self: flex-end;
-    border-radius: 20px;
+    padding-top: 20%;
 }
 
 .ons_team {
@@ -302,12 +296,30 @@ svg {
         text-align: center;
     }
 
+    body .Producten_Body {
+        
+    }
+
     .producten {
         flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 5%;
+    }
+
+    .melomakarona {
+        padding-bottom: 20%;
     }
 
     header {
         height: 30vw;
+    }
+
+    footer {
+        position: fixed; /* Stick footer at the bottom of the viewport */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure footer appears above other content */
     }
 
     header img {
