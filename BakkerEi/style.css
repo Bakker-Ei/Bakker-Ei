@@ -34,12 +34,12 @@ header {
 }
 
 #producten_header {
-
-    font-size: 50px;
-    
+    font-size: 50px; 
 }
+
 main {
     flex: 1 0 auto;
+    overflow: auto;
 }
 
 footer {
@@ -50,7 +50,7 @@ footer {
     align-items: center;
     padding: 10px 3% 10px 1%;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -143,8 +143,16 @@ button.volgende {
     width: 11vw;
 }
 
+.container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
 .titeltekst {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;  
     width: 100vw;
@@ -154,18 +162,27 @@ button.volgende {
 
 .product_afbeelding {
     height: 30vw;
-    align-self: flex-end;
     border-radius: 20px;
+}
+
+.Producten_Body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .melomakarona {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 0 0 auto;
     align-items: center;
-    justify-content: flex-start;
     padding: 20px;
     gap: 20px;
+}
+
+#Kourabiedes {
+    padding-bottom: 10%;
 }
 
 .producten {
@@ -192,7 +209,6 @@ button.volgende {
 
 .ons_merk {
     height: 50vh;   
-    overflow: hidden;
     padding-bottom: 5%;
     text-align: right !important;
 }
