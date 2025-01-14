@@ -160,6 +160,18 @@ button.volgende {
     margin: 0px 0px 0px 0px;
 }
 
+
+.producten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;    
+    height: 5vh;
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+
 .product_afbeelding {
     height: 30vw;
     border-radius: 20px;
@@ -185,15 +197,14 @@ button.volgende {
     padding-bottom: 10%;
 }
 
-.producten {
+#Tsoureki {
+    text-align: end;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;    
-    height: 5vh;
-    padding-bottom: 5%;
-    padding-top: 1%;
+    align-items: flex-start;
+}
+
+#Tsoureki_afbl {
+    justify-self: flex-end;
 }
 
 .ons_team {
