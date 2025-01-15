@@ -12,7 +12,7 @@
 }
  
 html, body {
-    height: 100%;
+    min-height: 200%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -38,8 +38,8 @@ header {
 }
  
 main {
-    flex: 1 0 auto;
-    overflow: auto;
+    flex: 1 ;
+    overflow-y: auto;
 }
  
 footer {
@@ -303,8 +303,30 @@ button.volgende {
     object-fit: cover;
     flex-shrink: 0;
 }
- 
-/*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
+
+.mini_producten {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 20vh; 
+    text-align: center;
+    color: #ebcd9b;
+}
+
+.mini_producten img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+
+.mini_product_item {
+    flex: 0 1 calc(33.333% - 20px); 
+    margin-bottom: 20px;
+}
 @media screen and (max-width: 767px) {
     #container p {
         font-size: 10vw !important;
@@ -483,5 +505,13 @@ button.volgende {
         flex-wrap: nowrap !important;
     }
  
- 
+    .mini_producten {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini_producten {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
