@@ -6,11 +6,11 @@
     font-weight: 600;
     font-style: normal;
 }
-
+ 
 .hamburger-menu {
     display: none;
 }
-
+ 
 html, body {
     height: 100%;
     margin: 0;
@@ -18,7 +18,7 @@ html, body {
     flex-direction: column;
     background-color: #cb6c32;
 }
-
+ 
 header {
     display: flex;
     flex-direction: row;
@@ -32,16 +32,16 @@ header {
     top: 0;
     z-index: 2;
 }
-
+ 
 #producten_header {
-    font-size: 50px; 
+    font-size: 50px;
 }
-
+ 
 main {
     flex: 1 0 auto;
     overflow: auto;
 }
-
+ 
 footer {
     flex-shrink: 0;
     background-color: #ebcd9b;
@@ -55,14 +55,14 @@ footer {
     left: 0;
     z-index: 1000;
 }
-
+ 
 .contact {
-    text-align: center;2 
+    text-align: center 2;
     height: 100vh !important;
-    line-height: 2; 
+    line-height: 2;
     padding-top: 10vh;
 }
-
+ 
 h2 {
     font-family: "guanabara-sans", sans-serif;
     font-weight: 450;
@@ -76,12 +76,12 @@ h2 {
     padding-bottom: 1vw;
     font-style: italic;
 }
-
+ 
 h2 .contact{
     text-align: center;
 }
-
-
+ 
+ 
 h1 {
     color: #ebcd9b;
     font-family: "guanabara-sans", sans-serif;
@@ -91,14 +91,14 @@ h1 {
     padding-left: 2vw;
     padding-right: 2vw;
 }
-
-
-
+ 
+ 
+ 
 ::selection {
     color: #cb6c32;
     background: #ebcd9b;
   }
-
+ 
 button {
     position: absolute;
     top: 50%;
@@ -110,52 +110,52 @@ button {
     padding: 10px;
     border-radius: 50%;
 }
-
+ 
 button.vorige {
     left: 20px;
 }
-
+ 
 button.vorige img {
     transform: scaleX(-1);
 }
-
+ 
 button.volgende {
     right: 20px;
 }
-
+ 
 button.vorige,
 button.volgende {
     z-index: 0;
 }
-
-
+ 
+ 
 .knop_href {
     text-decoration: none;
     color: #ebcd9b;
 }
-
+ 
 .knop_href:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
+ 
 .logo_f {
     width: 5vw;
     padding-right: 1vw;
 }
-
+ 
 .logo {
     cursor: pointer;
     width: 11vw;
 }
-
-.container { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 20px; 
+ 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
 }
-
+ 
 .titeltekst {
     display: flex;
     flex: 1;
@@ -165,18 +165,18 @@ button.volgende {
     padding-bottom: 1%;
     margin: 0px 0px 0px 0px;
 }
-
+ 
 .product_afbeelding {
     height: 30vw;
     border-radius: 20px;
 }
-
+ 
 .Producten_Body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+ 
 .melomakarona {
     display: flex;
     flex-direction: row;
@@ -186,11 +186,11 @@ button.volgende {
     padding: 20px;
     gap: 20px;
 }
-
+ 
 #Kourabiedes {
     padding-bottom: 10%;
 }
-
+ 
 .producten {
     display: flex;
     flex-direction: row;
@@ -201,7 +201,7 @@ button.volgende {
     padding-bottom: 5%;
     padding-top: 1%;
 }
-
+ 
 .ons_team {
     display: flex;
     flex-direction: column;
@@ -212,13 +212,13 @@ button.volgende {
     overflow: hidden;
     padding-bottom: 5%;
 }
-
+ 
 .ons_merk {
-    height: 50vh;   
+    height: 50vh;  
     padding-bottom: 5%;
     text-align: right !important;
 }
-
+ 
 .knop, .knop a {
     background-color: #cb6c32;
     color: #ebcd9b;
@@ -234,22 +234,22 @@ button.volgende {
     text-decoration: none;
     flex-grow: calc();
 }
-
+ 
 .knop h2, .knop a h2 {
     margin: 0;
     color: inherit;
     padding: 10px;
 }
-
+ 
 .knop a {
     text-decoration: none;
     color: inherit;
 }
-
+ 
 .knop a:hover {
     text-decoration: none;
 }
-
+ 
 .knop:hover, .knop a:hover {
     transition: 0.35s;
     color: #cb6c32;
@@ -258,30 +258,30 @@ button.volgende {
     outline-width: 4px;
     outline-color: #cb6c32;
 }
-
+ 
 #trademark {
     align-items: center;
     color: #cb6c32;
     display: flex;
 }
-
+ 
 #navbar {
     display: flex;
     justify-content: space-around;
     gap: 10%;
 }
-
+ 
 .knop_f {
     text-decoration: none;
     color: #cb6c32;
     cursor: pointer;
 }
-
+ 
 #knop_f:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
+ 
 .carousel {
     position: relative;
     width: 100%;
@@ -289,21 +289,21 @@ button.volgende {
     overflow: hidden;
     background-color: #ffffff;
 }
-
+ 
 .carousel-images {
     display: flex;
     height: 100%;
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
-
+ 
 .carousel-images img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
     flex-shrink: 0;
 }
-
+ 
 /*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
 @media screen and (max-width: 767px) {
     #container p {
@@ -316,32 +316,28 @@ button.volgende {
         padding-bottom: 2vh;
         text-align: center;
     }
-
+ 
     h1 {
         font-size: 15vw;
         margin-bottom: 1vh;
         padding-left: 3vw !important;
         text-align: center;
     }
-
-    body .Producten_Body {
-        
-    }
-
+ 
     .producten {
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 5%;
     }
-
+ 
     .melomakarona {
         padding-bottom: 20%;
     }
-
+ 
     header {
         height: 30vw;
     }
-
+ 
     footer {
         position: fixed; /* Stick footer at the bottom of the viewport */
         bottom: 0;
@@ -349,7 +345,7 @@ button.volgende {
         width: 100%;
         z-index: 1000; /* Ensure footer appears above other content */
     }
-
+ 
     header img {
         max-width: 100%;
         height: 25vw !important;
@@ -359,20 +355,20 @@ button.volgende {
     .knop, .knop a {
         display: none;
     }
-
+ 
     .hamburger-menu {
         display: block;
     }
-
+ 
     .menu-open header {
         height: 100vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
     }
-
+ 
     .menu-items a {
-        font-size: 10vw; 
+        font-size: 10vw;
         background-color: #cb6c32;
         height: 40vw;
         margin-top: 2vh;
@@ -387,8 +383,8 @@ button.volgende {
         text-decoration: none;
         flex-grow: calc();
     }
-
-
+ 
+ 
     .menu-items {
         d.menu-items {
             display: none;
@@ -400,13 +396,13 @@ button.volgende {
             padding: 20px;
             font-size: 20px
     }
-
+ 
     .menu-open .menu-items {
         display: flex;
     }
-
+ 
 }
-
+ 
     .hamburger-icon {
         cursor: pointer;
         display: flex;
@@ -415,7 +411,7 @@ button.volgende {
         width: 10vw;
         height: 10vw;
     }
-
+ 
     .hamburger-icon span {
         display: block;
         width: 100%;
@@ -423,13 +419,13 @@ button.volgende {
         background-color: #cb6c32;
         transition: all 0.3s ease-in-out;
     }
-
-    
+ 
+   
     button.vorige,
     button.volgende {
         display: none;
     }
-
+ 
     .menu-items {
         display: none;
         position: absolute;
@@ -439,7 +435,7 @@ button.volgende {
         background-color: #cb6c32;
         padding: 20px;
     }
-
+ 
     .menu-open .menu-items {
         display: flex;
         flex-direction: column;
@@ -451,41 +447,41 @@ button.volgende {
         height: 100vh;
         z-index: 100000;
     }
-
-
-
+ 
+ 
+ 
     .menu-open .menu-items {
         display: block;
     }
-
+ 
     .menu-open .hamburger-icon span:first-child {
         transform: rotate(45deg) translate(0.8vw, 1.3vw);
     }
-
+ 
     .menu-open .hamburger-icon span:nth-child(2) {
         opacity: 0;
     }
-
+ 
     .menu-open .hamburger-icon span:last-child {
         transform: rotate(-45deg) translate(3.4vw, -4vw);
     }
-
-
+ 
+ 
     .product_afbeelding {
         width:  80vw;
         height : 75vw;
         margin-left: 5vw;
         align-items: center;
     }
-
+ 
     .wij {
         margin-right: 5vw;
     }
-
+ 
     .titeltekst {
         padding-left: 3vw;
         flex-wrap: nowrap !important;
     }
-
-
+ 
+ 
 }
