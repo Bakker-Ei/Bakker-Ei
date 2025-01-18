@@ -306,6 +306,7 @@ button.volgende {
     position: relative !important;
     width: 100%;
     height: 100%;
+    margin-bottom: 5vh;
     overflow: hidden;
     background-color: #cb6c32;
 }
@@ -329,8 +330,7 @@ button.volgende {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-top: 20px;
-    height: 50vh;
+    height: 60vh;
 }
 
 .mini_producten {
