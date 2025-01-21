@@ -1,3 +1,5 @@
+//Meer JS van Chat, voor de carrousel
+
 document.addEventListener('DOMContentLoaded', () => {
   // Hamburger Menu Functionality
   const hamburgerMenu = document.querySelector('.hamburger-menu');
