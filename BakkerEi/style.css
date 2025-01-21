@@ -350,7 +350,7 @@ button.volgende {
 /*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
 @media screen and (max-width: 767px) {
     #container p {
-        font-size: 10vw !important;
+        font-size: 10vw;
     }
     /* Tekst op telefoon */
     h2 {
