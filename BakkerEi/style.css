@@ -12,7 +12,8 @@ html, body {
     height: 100%;
     margin: 0;
     width: 100%;
-    overflow-y: auto;
+    display: flex; 
+    flex-direction: column;
     background-color: #cb6c32;
 }
 
@@ -40,7 +41,7 @@ header {
 }
 
 main {
-    flex: 1;
+    flex-grow: 1;
     overflow-y: auto;
     width: 100vw;
 }
@@ -53,6 +54,7 @@ footer {
     align-items: center;
     padding: 10px 3% 10px 1%;
     width: 100%;
+    margin-top: auto;
     position: relative;
     bottom: 0;
     left: 0;
@@ -536,12 +538,20 @@ button.volgende {
 
     .mini_producten_container {
         flex-direction: column;
+        margin-bottom: 1px;
+        height: auto;
     }
 
     .reviews {
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         gap: 5vh;
     }
 
+    .review {
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
 }
