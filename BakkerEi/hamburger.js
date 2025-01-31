@@ -1,4 +1,4 @@
-// JavaScript is door chat, wij hebben niet JS geleerd
+// JavaScript is door chat-gpt, wij hebben niet JS geleerd (want we zijn dom)
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const header = document.querySelector('header');
@@ -9,4 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-  
+

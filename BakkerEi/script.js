@@ -68,3 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(moveToNextImage, 10000);
   }
 });
+
+// Dit is een geh-ei-me pagine voor het interview (easter ei)
+document.querySelector(".logo").addEventListener("click", function(event) {
+  event.preventDefault(); // Voorkomt de standaard actie van de <a> tag
+  if (event.ctrlKey && event.shiftKey) {
+      window.location.href = "ons-super-ei.html"; // Geheime pagina
+  } else {
+      window.location.href = "index.html"; // Standaard homepage
+  }
+});

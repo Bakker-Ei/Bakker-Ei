@@ -114,6 +114,10 @@ p {
     background: #ebcd9b;
   }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
   /* Knoppen voor de carrousel (ChatGPT), plaatje uitendelijk vervangen */
 button {
     position: absolute;
@@ -343,11 +347,24 @@ button.volgende {
 .reviews {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
     background-color: #cb6c32;
     height: 90vh;
     margin: 5vh;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 27vw;
+}
+
+.review img {
+    width: 17vw;
 }
 
 /*Dit is een preset voor phone compatability, dit gaan jullie nodig hebben als je de testgrootte en knoppenformatie aan wil passen*/
@@ -547,11 +564,21 @@ button.volgende {
         align-items: center;
         justify-content: space-around;
         gap: 5vh;
+        margin: 2vh;
     }
 
     .review {
         align-items: center;
         align-content: center;
         justify-content: space-around;
+        width: 80vw;
+    }
+
+    .review img {
+        width: 50vw;
+    }
+
+    .titeltext_centered {
+        margin-bottom: 1vh;
     }
 }
