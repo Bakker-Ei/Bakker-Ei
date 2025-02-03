@@ -186,6 +186,7 @@ button.volgende {
     margin: 0px 0px 0px 0px;
 }
 
+
 .producten {
     display: flex;
     flex-direction: row;
@@ -322,9 +323,10 @@ button.volgende {
 .mini_producten_container {
     background-color: #cb6c32;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    height: 60vh;
+    gap: 3vw;
 }
 
 .mini_producten {
